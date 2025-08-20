@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Pose Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet">
+    <style>
+  html{
+    scroll-behavior: smooth;
+  }
+    .fade-in {
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    body {
+      background: url('pic.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      font-family: 'Outfit', sans-serif;
+    }
+    </style>
+ 
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".fade-in").forEach(el => {
+                el.classList.add("visible");
+            });
+        });
+    </script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+    <div class="bg-white shadow-lg rounded-2xl p-8 max-w-7xl w-[78%] flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10 fade-in">
+      
+      <!-- Image & Video Section -->
+      <div class="flex flex-col items-center space-y-6 w-full md:w-auto">
+        <img src="Moon Salutation.jpg" alt="Cat Stretch Pose" class="w-[500px] h-[340px] object-cover rounded-xl shadow-md">
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x-QxVypp86U?si=xbvVXBDBm92wu23x" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-4xl font-bold mb-6 text-red-800">Yoga Flow: Chandra Namaskar</h1>
+            <p class="text-gray-700 mb-4">
+               Chandra Namaskar (Moon Salutation) is a calming and grounding sequence that honors the feminine, lunar energy. It is often practiced in the evening to relax the body and mind.
+            </p>
+            <h2 class="text-2xl font-bold mb-3 text-red-700">Instructions:</h2>
+            <ul class="list-disc list-inside text-black-700 mb-6 space-y-1 text-base">
+                <li>Begin in Tadasana (Mountain Pose), standing tall and centered.</li>
+                <li>Inhale and raise your arms overhead into a crescent moon shape.</li>
+                <li>Exhale and fold forward into a gentle forward bend.</li>
+                <li>Move through side stretches, low lunges, and a gentle backbend.</li>
+                <li>Repeat on both sides to complete the flow symmetrically.</li>
+                <li>Finish in a seated or standing meditative posture, focusing on breath.</li>
+            </ul>
+            <h2 class="text-2xl font-bold mb-3 text-red-700">Benefits:</h2>
+            <ul class="list-disc list-inside text-black-700 space-y-1">
+                <li>Promotes emotional balance and calmness.</li>
+                <li>Improves flexibility in hips, legs, and spine.</li>
+                <li>Supports reproductive and digestive health.</li>
+                <li>Balances energy and aids restful sleep.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

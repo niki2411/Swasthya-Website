@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Pose Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        .fade-in {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        body {
+            background: url('pic.jpg') no-repeat center center/cover;
+            min-height: 100vh;
+            font-family: 'Outfit', sans-serif;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".fade-in").forEach(el => {
+                el.classList.add("visible");
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+    <div
+        class="bg-white shadow-lg rounded-2xl p-8 max-w-7xl w-[78%] flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10 fade-in">
+
+        <!-- Image & Video Section -->
+        <div class="flex flex-col items-center space-y-6 w-full md:w-auto">
+            <a id='xJ_focQZTmZwiAJTBuzEig' class='gie-single' href='http://www.gettyimages.com/detail/1050888664'
+                target='_blank'
+                style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed
+                from Getty Images</a>
+            <script>window.gie = window.gie || function (c) { (gie.q = gie.q || []).push(c) }; gie(function () { gie.widgets.load({ id: 'xJ_focQZTmZwiAJTBuzEig', sig: '2UtBjd0mgNPxWEZxHfrGVnUWPui0EPbZVT516xyPLsM=', w: '509px', h: '339px', items: '1050888664', caption: true, tld: 'com', is360: false }) });</script>
+            <script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+            <video controls class="w-[500px] h-[300px] rounded-xl shadow-md">
+                <source src="vid3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Info Section -->
+        <div class="w-full md:w-[50%]">
+            <h1 class="text-4xl font-bold mb-6 text-red-800">Yoga Pose:Salabhasana (Locust Pose) </h1>
+            <p class="text-black-700 mb-6 text-lg leading-relaxed">
+            </p>
+
+            <h2 class="text-2xl font-bold mb-3 text-red-700">Instructions:</h2>
+            <ul class="list-disc list-inside text-black-700 mb-6 space-y-1 text-base">
+                <li> Lie on your belly, arms alongside your body, palms facing down.</li>
+
+                <li> Inhale and lift your legs and upper torso off the floor.</li>
+
+                <li> Keep knees straight and legs extended upward.</li>
+
+                <li> Balance your weight on the pelvis, belly, and lower ribs.</li>
+
+                <li> Hold the pose for a few breaths, keeping your body engaged.</li>
+
+                <li> Exhale and slowly lower your legs and head to the floor.</li>
+
+                <li> Relax and repeat 2-3 times.</li>
+
+
+
+            </ul>
+
+            <h2 class="text-2xl font-semibold mb-3 text-red-700">Benefits:</h2>
+            <ul class="list-disc list-inside text-black-700 space-y-1">
+                <li>Reduces abdominal fat and tones the core.</li>
+                <li>Expands the chest and improves lung capacity.</li>
+                <li>Enhances spinal flexibility and alignment
+                <li>Stimulates digestion and boosts energy.</li>
+                <li> Strengthens back muscles.</li>
+
+
+
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html

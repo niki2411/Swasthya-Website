@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yoga Pose Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+    .fade-in {
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    body {
+      background: url('pic.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".fade-in").forEach(el => {
+        el.classList.add("visible");
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+  <div class="bg-white shadow-lg rounded-2xl p-8 max-w-7xl w-[78%] flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10 fade-in">
+    
+    <!-- Image & Video Section -->
+    <div class="flex flex-col items-center space-y-6 w-full md:w-auto">
+      <img src="Warrior 2.jpg" alt="Tree Pose" class="w-[500px] h-[300px] object-cover rounded-xl shadow-md">
+      <video controls class="w-[500px] h-[300px] rounded-xl shadow-md">
+        <source src="vid2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Info Section -->
+    <div class="w-full md:w-[50%]">
+        <h1 class="text-4xl font-bold mb-6 text-red-800">Yoga Pose:Virabhadrasana II (Warrior II)</h1>
+        <p class="text-black-700 mb-6 text-lg leading-relaxed">
+      </p>
+      
+      <h2 class="text-2xl font-bold mb-3 text-red-700">Instructions:</h2>
+      <ul class="list-disc list-inside text-black-700 mb-6 space-y-1 text-base">
+           <li> From Tadasana, exhale and step your feet 4-5 feet apart.</li>
+        <li>Turn your right foot 90° out, left foot slightly in (about 10°).</li>
+        <li>Exhale, bend your right knee so the thigh is parallel to the floor, knee over heel.</li>
+        <li>Keep your left leg straight, lift the left hip, and open the chest.</li>
+        <li>Rotate knees outward, lift ribcage, and draw the tailbone down.</li>
+        <li>Inhale, extend arms to shoulder height, gaze over your right hand.</li>
+        <li>Stretch through the fingertips, keeping shoulders relaxed.</li>
+            
+            
+      </ul>
+
+      <h2 class="text-2xl font-semibold mb-3 text-red-700">Benefits:</h2>
+      <ul class="list-disc list-inside text-black-700 space-y-1">
+        <li>Increases mobility and flexibility in the hips.</li>
+            <li>Tones and strengthens the lower back, legs, thighs, core, arms, and abdomen.</li>
+            <li>Promotes correct spinal functioning</li>
+            <li>Improves balance.</li>
+            <li>Builds stamina and inner strength.</li>
+            
+            
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

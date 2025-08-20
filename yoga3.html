@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yoga Pose Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+   html{
+    scroll-behavior: smooth;
+  }
+  .fade-in {
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    body {
+      background: url('pic.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".fade-in").forEach(el => {
+        el.classList.add("visible");
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+  <div class="bg-white shadow-lg rounded-2xl p-8 max-w-7xl w-[78%] flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10 fade-in">
+    
+    <!-- Image & Video Section -->
+    <div class="flex flex-col items-center space-y-6 w-full md:w-auto">
+      <img src="lotus_yoga.jpg" alt="Lotus Pose" class="w-[500px] h-[300px] object-cover rounded-xl shadow-md">
+      <!-- Embedded YouTube Video -->
+      <div class="w-[500px] h-[300px] rounded-xl shadow-md overflow-hidden">
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/UTOBheDjLhQ?si=4KX5GwuYicpNoLAv" 
+          title="Lotus Pose Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <div class="flex-1">
+      <h1 class="text-4xl font-bold mb-6 text-red-800">Yoga Pose: Padmasana (Lotus Pose)</h1>
+      <p class="text-gray-700 mb-6 text-lg">
+        Padmasana, or Lotus Pose, is a classic seated posture used for meditation and pranayama. It promotes physical stability and calms the mind, helping to deepen the practice of meditation.
+      </p>
+      
+      <h2 class="text-2xl font-bold mb-3 text-red-700">Instructions:</h2>
+      <ul class="list-disc list-inside text-black-700 mb-6 space-y-1 text-base">
+        <li>Sit with your legs stretched out in front of you.</li>
+        <li>Bend your right knee and place your right foot on your left thigh, sole facing upward.</li>
+        <li>Now bend your left knee and place your left foot on your right thigh in the same manner.</li>
+        <li>Keep your spine erect and rest your hands on your knees in a mudra of your choice.</li>
+        <li>Close your eyes and focus on your breathing. Hold the pose for a few minutes.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mb-3 text-red-700">Benefits:</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>Improves posture and strengthens the spine.</li>
+        <li>Calms the brain and helps relieve stress and anxiety.</li>
+        <li>Stimulates the pelvic region and improves digestion.</li>
+        <li>Prepares the body and mind for meditation and pranayama.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

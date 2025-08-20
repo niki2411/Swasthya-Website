@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yoga Pose Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+   html{
+    scroll-behavior: smooth;
+  }
+    .fade-in {
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    body {
+      background: url('pic.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      font-family: 'Outfit', sans-serif;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".fade-in").forEach(el => {
+        el.classList.add("visible");
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+  <div class="bg-white shadow-lg rounded-2xl p-8 max-w-7xl w-[78%] flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10 fade-in">
+    
+    <!-- Image & Video Section -->
+    <div class="flex flex-col items-center space-y-6 w-full md:w-auto">
+      <img src="cat_stretch.jpg" alt="Cat Stretch Pose" class="w-[510px] h-[300px] object-cover rounded-xl shadow-md">
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gzWKOVus1Ec" allowfullscreen></iframe>
+      </div>
+      </div>
+    
+
+    <!-- Info Section -->
+    <div class="flex-1">
+      <h1 class="text-4xl font-bold mb-6 text-red-800">Yoga Pose: Marjaryasana (Cat Stretch)</h1>
+      <p class="text-gray-700 mb-6 text-lg">
+        Marjaryasana, or Cat Stretch Pose, is a gentle flow between two poses that warms the body and brings flexibility to the spine. It is often used as a warm-up in yoga sessions.
+      </p>
+      
+      <h2 class="text-2xl font-bold mb-3 text-red-700">Instructions:</h2>
+      <ul class="list-disc list-inside text-black-700 mb-6 space-y-1 text-base">
+        <li>Start on your hands and knees in a tabletop position.</li>
+        <li>Ensure your knees are directly below your hips and your wrists below your shoulders.</li>
+        <li>Inhale, lifting your tailbone and head up as your belly drops toward the floor (Cow Pose).</li>
+        <li>Exhale, rounding your spine upward and tucking your chin to your chest (Cat Pose).</li>
+        <li>Repeat the motion for 5-10 breaths, synchronizing with your breath.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mb-3 text-red-700">Benefits:</h2>
+      <ul class="list-disc list-inside text-black-700 space-y-1">
+        <li>Improves spinal flexibility and mobility.</li>
+        <li>Stretches the back and neck gently.</li>
+        <li>Relieves tension in the spine and shoulders.</li>
+        <li>Promotes emotional balance and stress relief.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
