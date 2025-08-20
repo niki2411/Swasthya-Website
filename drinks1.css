@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(45deg,rgb(207, 11, 11), rgb(61, 219, 219));
+    font-family: 'Acme';
+  }
+html{
+    scroll-behavior: smooth;
+}
+header{
+width: 100%;
+height: 55px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 100px;
+background: linear-gradient(45deg, rgb(190, 190, 143),rgb(211, 47, 47),rgb(105, 175, 210));
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(drinkbg.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #213032;
+    margin-right: 40px;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: #fbd61c;
+    font-size: 75px;
+    margin: 20px 0px 20px;
+}
+h3{
+    color: #edffef;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #edffef;
+    letter-spacing: 2px;
+    font-size:20px;
+}
+.button{
+    position: absolute;
+    background: linear-gradient(45deg, #1a1a1a, #942c2c, #4c4c4c);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    transform: .4s;
+    }
+.button:hover{
+        background-color: #97a2a3;
+        color: yellow;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background: linear-gradient(45deg, yellow,brown,rgb(104, 169, 197));
+}
+.about img{
+    height: auto;
+    width: 430px;
+    border-radius: 20px 0 20px 0;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about h2{
+    color:#edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about-text p{
+    color: #000708;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+.about-text{
+    width: 500px;
+}
+
+.recipe h2{
+    color:#edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+/*Recipe Section CSS*/
+.container{
+    max-width:1100px;
+    margin:100px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+  }
+  
+  .card{
+    position:relative;
+    margin:20px 0;
+    width:300px;
+    height:400px;
+    background: #fff;
+    transform-style:preserve-3d;
+    transform:perspective(2000px);
+    transition:1s;
+    box-shadow:inset 100px 0 50px rgba(0,0,0,0.5);
+  }
+  
+  .card:hover{
+    z-index:1111;
+    transform:perspective(2000px) rotate(-10deg);
+    box-shadow:inset 20px 0 50px rgba(0,0,0,0.5);
+  }
+  
+  .card .img-container{
+    position:relative;
+    width:100%;
+    height:100%;
+    border:1px solid #000;
+    box-sizing:border-box;
+    transform-origin:left;
+    z-index:1;
+    transition:1s;
+  }
+  
+  .card .img-container img{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+  }
+  
+  .card:hover .img-container{
+    transform:rotateY(-135deg);
+  }
+  
+  .card .card-details{
+    position:absolute;
+    left:0;
+    top:0;
+    box-sizing:border-box;
+    padding:20px;
+    color:#000;
+  }
+  
+   .card .card-details h2{
+    margin:0;
+    padding:0.5em 0;
+    text-transform:uppercase;
+    font-size:2em;
+    color:#ed363a;
+  }
+  
+  .card .card-details p{
+    margin:0;
+    padding:0;
+    line-height:25px;
+    font-size:1.1em;
+  }
+  .container .card button{
+    position:relative;
+    background: linear-gradient(45deg, #1a1a1a, #942c2c, #4c4c4c);
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 10px 30px;
+ }
+ .container .card button:hover{
+    background-color: #97a2a3;
+    color: yellow;
+    border: 2px solid black;
+    cursor: pointer;
+ }
