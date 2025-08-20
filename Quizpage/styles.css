@@ -1,0 +1,114 @@
+body {
+    background-image: url('green-composition-with-leaves-wood.jpg');
+    background-position: center center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .quiz-container {
+    background-image:url('oakleaves.jpg');
+    background-position: center center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+    padding-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    color: #300202;
+    font-size: large;
+    font-weight: bold
+  }
+  
+  h1 {
+    text-align: center;
+    color: #283618;
+    font-size: x-large;
+  }
+  
+  .user-info label {
+    display: block;
+    margin-bottom: 10px;
+    color: #300202;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .user-info input
+  , .user-info select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .question {
+    display: none;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #300202;
+    font-weight: bold;
+
+  }
+  
+  .question.active {
+    display: block;
+  }
+  .question label {
+    display: block; /* Makes each answer take a new line */
+    margin-bottom: 10px; /* Adds spacing between answers */
+    font-size: 20px;
+    color: #032d03;
+    font-weight: bold;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  button {
+    padding: 20px 25px;
+    background-color: #013205;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0d1e02;
+  }
+
+  #resultContainer {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .gaugeBox {
+    width: 200px;
+    text-align: center;
+  }
+
+  canvas {
+    max-width: 100%;
+  }
+  
