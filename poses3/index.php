@@ -1,0 +1,53 @@
+<?php
+if (file_exists('Yoga_page/index.php')) {
+    include('Yoga_page/index.php');
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Pose Detection</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="ml5.min.js"></script>
+</head>
+<body>
+  <h1>Yoga Pose Detection</h1>
+  <h2>Follow the Target Pose</h2>
+
+  <div class="container">
+    <div class="canvas-container">
+      <h2>Camera Feed</h2>
+      <div id="canvas-container"></div>
+    </div>
+    <div class="pose-image-container">
+      <h2>Target Pose</h2>
+      <img src="Godness.jpg" alt="Target Yoga Pose" id="target-pose" />
+    </div>
+    <div class="right-side-container">
+    <div class="feedback-container">
+      <h2>Feedback</h2>
+      <p id="poseLabel">Pose: No Pose Detected</p>
+    <p id="poseStatus">Status: No Pose</p>
+    <p id="feedback">Feedback: </p>
+      </div>
+      <div class="instruction-container">
+        <h2>Instructions</h2>
+        <ul>
+          <li>Ensure full body is visible in the camera.</li>
+          <li>Match your posture to the target image.</li>
+          <li>Hold the pose for 5 seconds for detection.</li>
+          <li>Use a plain background for better accuracy.</li>
+        </ul>
+      </div>
+      </div>
+  </div>
+  </div>
+
+
+  <script src="sketch2.js"></script>
+</body>
+</html>

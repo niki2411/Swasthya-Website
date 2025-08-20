@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Pose Detection</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="ml5.min.js"></script>
+</head>
+<body>
+  <h1>Yoga Pose Detection</h1>
+  <h2>Follow the Target Pose</h2>
+
+  <div class="container">
+    <div class="canvas-container">
+        <div id="canvas-container"></div>
+<button id="startButton" onclick="startDetection()">Start</button>
+<button id="stopButton" onclick="stopDetection()" style="display: none;">Stop</button>
+
+
+      <h2>Camera Feed</h2>
+      <div id="canvas-container"></div>
+    </div>
+    <div class="pose-image-container">
+      <h2>Target Pose</h2>
+      <img src="mountain pose.png" alt="Target Yoga Pose" id="target-pose" />
+    </div>
+    <div class="feedback-container">
+      <h2>Feedback</h2>
+      <p id="poseLabel">Pose:</p>
+      <p id="poseStatus">Status:</p>
+      <p id="feedback">Feedback:</p>
+      </div>
+  </div>
+  </div>
+
+
+  <script src="sk1.js"></script>
+</body>
+</html>
